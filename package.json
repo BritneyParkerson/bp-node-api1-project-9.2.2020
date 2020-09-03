@@ -1,0 +1,27 @@
+{
+  "name": "bp-node-api1-project-9.2.2020",
+  "version": "1.0.0",
+  "description": "- Building a RESTful API.\r - Performing CRUD operations.\r - Writing API endpoints.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BritneyParkerson/bp-node-api1-project-9.2.2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BritneyParkerson/bp-node-api1-project-9.2.2020/issues"
+  },
+  "homepage": "https://github.com/BritneyParkerson/bp-node-api1-project-9.2.2020#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
