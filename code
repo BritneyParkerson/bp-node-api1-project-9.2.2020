@@ -1,0 +1,22 @@
+server.get('/users', (req, res) => {
+        users
+		.loadUsers()
+		.then((users) => res.status(200).json(users))
+		.catch((error) => {
+			console.log(error.message);
+			res.status(500).json({ message: 'Could not load users' });
+     })
+
+     server.post('/api/users', (req, res) => {
+        if (req.body.description && req.body.project_id) {
+            users
+                .addUser(req.body)
+                .then((user) => res.status(201).json(user))
+                .catch((error) => {
+                    console.log(error);
+                    res.status(500).json({ message: 'Could not add user' });
+                });
+        } else {
+            res.status(400).json({ message: "Description Required." });
+        }
+    });
